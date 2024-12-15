@@ -13,7 +13,7 @@ const App = () => {
       
       const response = await fetch(api_URL)
       const data = await response.json()
-      console.log(res)
+      console.log(response)
 
       setNetflix(data.status)
     } catch (err) {
