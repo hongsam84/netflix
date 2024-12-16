@@ -19,7 +19,7 @@ a {
 
 .list-name {
   position:absolute;
-  width: 80%;
+  width: 100%;
   bottom: 5px;
   padding: 16px 0px;
   text-align: center;
@@ -65,7 +65,7 @@ p{
 }
 
 .image-size{
-  width: 300px;
+  width: 350px;
   height: 180px;
 }
 
