@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Container from './Container';
 import Navigationlist from './Navigationlist.js';
 
-const api_URL = process.env.REACT_APP_API_URL
+const api_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/netflixlist'
 
 const App = () => {
   const [ netflixlist, setNetflix ] = useState([])
