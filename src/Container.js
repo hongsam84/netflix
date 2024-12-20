@@ -33,9 +33,9 @@ const Container = (props) => {
                     </div>
                 </div>
                 {listDetails && props.list.story && (
-                    <pre className='list-story' onClick={handleIconClick}>
+                    <p className='list-story' onClick={handleIconClick}>
                         {props.list.story}
-                    </pre>
+                    </p>
                 )}
             </div>            
         </>
