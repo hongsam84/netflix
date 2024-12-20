@@ -1,9 +1,10 @@
 
 .watchlist {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;  
+    grid-template-columns: repeat(6, 250px);  
     gap: 20px;                             
-    padding: 20px;
+    padding: 10px;
+    justify-content: center; 
 }
 
 .header{
@@ -41,7 +42,7 @@ p{
 
 .list-story {
   margin-top: 0px;
-  background-color: #faf2e8;
+  background-color: white;
   color: #555555;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -65,8 +66,8 @@ p{
 }
 
 .image-size{
-  width: 350px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
 }
 
 ul {

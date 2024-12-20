@@ -1,7 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react'
-import Container from './Container';
-import Navigationlist from './Navigationlist.js';
+import axios from 'axios'
+import Container from './Container'
+import Navigationlist from './Navigationlist.js'
 
 const api_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/netflixlist'
 
@@ -11,11 +12,10 @@ const App = () => {
   const fetchNetflix = async () => {
     try {
       
-      const response = await fetch(api_URL)
-      const data = await response.json()
+      const response = await axios.get(api_URL)
       console.log(response)
 
-      setNetflix(data)
+      setNetflix(response.data)
     } catch (err) {
       console.log(err)
       
